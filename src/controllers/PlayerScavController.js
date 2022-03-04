@@ -51,7 +51,7 @@ class PlayerScavController {
         const config = require("../../config/config.json");
 
         scavKarma = Math.round(scavKarma) || 1;
-        const overwriteConfig = require(`../../config/${scavKarma}.json`);
+        const overwriteConfig = require(`../../config/levels/${scavKarma}.json`);
 
         if (config.changeItemGeneration) {
             node.generation = overwriteConfig.generation;
