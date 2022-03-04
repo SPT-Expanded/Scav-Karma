@@ -1,0 +1,8 @@
+{
+    "enableMod": true,
+    "changeItemGeneration": true,
+    "changeChances": {
+        "equipment": true,
+        "mods": true
+    }
+}
