@@ -1,0 +1,8 @@
+{
+    "name": "SPT-Expanded Scav Karma",
+    "author": "citharus",
+    "version": "1.0.0",
+    "akiVersion": "2.2.*",
+    "license": "NCSA Open Source",
+    "main": "package.js"
+}
