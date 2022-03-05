@@ -1,5 +1,6 @@
 "use strict";
 
+
 class PlayerScavController {
     static generateScav(sessionId) {
         const pmcData = ProfileController.getPmcProfile(sessionId);
@@ -27,7 +28,6 @@ class PlayerScavController {
         bot.Customization.Feet = RandomUtil.getArrayValue(node.appearance.feet);
         bot.Customization.Hands = RandomUtil.getArrayValue(node.appearance.hands);
         bot.Inventory = BotGenerator.generateInventory(node.inventory, node.chances, node.generation);
-        Logger.warning(bot.Inventory);
 
         bot = InventoryHelper.generateInventoryID(bot);
 
