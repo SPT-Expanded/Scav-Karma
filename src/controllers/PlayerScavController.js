@@ -50,7 +50,7 @@ class PlayerScavController {
     static modifyBotNode(node, scavKarma) {
         const config = require("../../config/config.json");
 
-        scavKarma = Math.round(scavKarma) || 1;
+        scavKarma = scavKarma < 0 ? "negative" : Math.round(scavKarma) || 1; 
         const overwriteConfig = require(`../../config/levels/${scavKarma}.json`);
 
         if (config.changeItemGeneration) {
