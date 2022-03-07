@@ -17,7 +17,7 @@ class PlayerScavController {
 
         if (BotConfig.showTypeInNickname) {
             bot.Info.Nickname += ` ${bot.Info.Settings.Role}`;
-        };
+        }
 
         bot.Info.Settings.StandingForKill = node.experience.standingForKill;
         bot.Info.Voice = RandomUtil.getArrayValue(node.appearance.voice);
@@ -45,7 +45,7 @@ class PlayerScavController {
 
         ProfileController.setScavProfile(sessionId, bot);
         return bot;
-    };
+    }
 
     static modifyBotNode(node, scavKarma) {
         const config = require("../../config/config.json");
@@ -70,19 +70,19 @@ class PlayerScavController {
         }
 
         return node;
-    };
+    }
 
     static overwriteItemGeneration(node, overwriteConfig) {
         node.generation = overwriteConfig.generation;
-    };
+    }
 
     static overwriteEquipmentChances(node, overwriteConfig) {
         node.chances.equipment = overwriteConfig.chances.equipment;
-    };
+    }
 
     static overwriteModsChances(node, overwriteConfig) {
         node.chances.mods = overwriteConfig.chances.mods;
-    };
+    }
 
     static addEquipment(node, overwriteConfig) {
         const equipment = overwriteConfig.addEquipment;
@@ -91,7 +91,7 @@ class PlayerScavController {
                 node.inventory.equipment[slot].push(equipment[slot][item]);
             }
         }
-    };
+    }
 
     static removeEquipment(node, overwriteConfig) {
         const equipment = overwriteConfig.addEquipment;
@@ -100,7 +100,7 @@ class PlayerScavController {
                 node.inventory.equipment[slot] = node.inventory.equipment[slot].filter(i => i !== equipment[slot][item]);
             }
         }
-    };
-};
+    }
+}
 
 module.exports = PlayerScavController;
