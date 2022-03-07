@@ -50,18 +50,34 @@ class PlayerScavController {
     static modifyBotNode(node, scavKarma) {
         const config = require("../../config/config.json");
 
-        scavKarma = scavKarma < 0 ? "negative" : Math.round(scavKarma) || 1; 
+        scavKarma = scavKarma < 0 ? "negative" : Math.round(scavKarma) || 1;
         const overwriteConfig = require(`../../config/levels/${scavKarma}.json`);
 
-        if (config.changeItemGeneration) {
-            node.generation = overwriteConfig.generation;
-        } else if (config.changeChances.equipment) {
-            node.chances.equipment = overwriteConfig.chances.equipment;
-        } else if (config.changeChances.mods) {
-            node.chances.mods = overwriteConfig.chances.mods;
-        };
+        if (config.overwriteItemGeneration) {
+            PlayerScavController.overwriteItemGeneration(node, overwriteConfig);
+        }
+        if (config.overwriteEquipmentChances) {
+            PlayerScavController.overwriteEquipmentChances(node, overwriteConfig);
+        }
+        if (config.overwriteModsChances) {
+            PlayerScavController.overwriteModsChances(node, overwriteConfig);
+        }
+
         return node;
     };
+
+    static overwriteItemGeneration(node, overwriteConfig) {
+        node.generation = overwriteConfig.generation;
+    };
+
+    static overwriteEquipmentChances(node, overwriteConfig) {
+        node.chances.equipment = overwriteConfig.chances.equipment;
+    };
+
+    static overwriteModsChances(node, overwriteConfig) {
+        node.chances.mods = overwriteConfig.chances.mods;
+    };
+
 };
 
 module.exports = PlayerScavController;
