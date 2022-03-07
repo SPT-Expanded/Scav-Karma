@@ -62,6 +62,12 @@ class PlayerScavController {
         if (config.overwriteModsChances) {
             PlayerScavController.overwriteModsChances(node, overwriteConfig);
         }
+        if (config.addEquipment) {
+            PlayerScavController.addEquipment(node, overwriteConfig);
+        }
+        if (config.removeEquipment) {
+            PlayerScavController.removeEquipment(node, overwriteConfig);
+        }
 
         return node;
     };
@@ -78,6 +84,23 @@ class PlayerScavController {
         node.chances.mods = overwriteConfig.chances.mods;
     };
 
+    static addEquipment(node, overwriteConfig) {
+        const equipment = overwriteConfig.addEquipment;
+        for (const slot in equipment) {
+            for (const item in equipment[slot]) {
+                node.inventory.equipment[slot].push(equipment[slot][item]);
+            }
+        }
+    };
+
+    static removeEquipment(node, overwriteConfig) {
+        const equipment = overwriteConfig.addEquipment;
+        for (const slot in equipment) {
+            for (const item in equipment[slot]) {
+                node.inventory.equipment[slot] = node.inventory.equipment[slot].filter(i => i !== equipment[slot][item]);
+            }
+        }
+    };
 };
 
 module.exports = PlayerScavController;
