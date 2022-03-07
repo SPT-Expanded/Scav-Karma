@@ -67,5 +67,31 @@
                 "max": 0
             }
         }
+    },
+    "addEquipment": {
+        "Headwear": [],
+        "Earpiece": [],
+        "FaceCover": [],
+        "ArmorVest": [],
+        "Eyewear": [],
+        "ArmBand": [],
+        "TacticalVest": [],
+        "Backpack": [],
+        "PrimaryWeapon": [],
+        "Holster": [],
+        "Scabbard": []
+    },
+    "removeEquipment": {
+        "Headwear": [],
+        "Earpiece": [],
+        "FaceCover": [],
+        "ArmorVest": [],
+        "Eyewear": [],
+        "ArmBand": [],
+        "TacticalVest": [],
+        "Backpack": [],
+        "PrimaryWeapon": [],
+        "Holster": [],
+        "Scabbard": []
     }
 }
