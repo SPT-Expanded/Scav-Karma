@@ -8,7 +8,7 @@ class PlayerScavController {
         let node = JsonUtil.clone(DatabaseServer.tables.bots.types.assault);
 
         const fence = pmcData.TradersInfo["579dc571d53a0658a154fbec"];
-        const scavKarma = 1;
+        let scavKarma = 1;
         if (fence != undefined) {
             scavKarma = fence.standing;
         }
