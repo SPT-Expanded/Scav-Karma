@@ -7,7 +7,12 @@ class PlayerScavController {
         let bot = JsonUtil.clone(DatabaseServer.tables.bots.base);
         let node = JsonUtil.clone(DatabaseServer.tables.bots.types.assault);
 
-        const scavKarma = pmcData.TradersInfo["579dc571d53a0658a154fbec"].standing;
+        const fence = pmcData.TradersInfo["579dc571d53a0658a154fbec"];
+        const scavKarma = 1;
+        if (fence != undefined) {
+            scavKarma = fence.standing;
+        }
+
         node = PlayerScavController.modifyBotNode(node, scavKarma)
 
         bot.Info.Settings.BotDifficulty = "normal";
