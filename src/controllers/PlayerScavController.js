@@ -93,16 +93,16 @@ class PlayerScavController {
         const equipment = overwriteConfig.addEquipment;
         for (const slot in equipment) {
             for (const item in equipment[slot]) {
-                node.inventory.equipment[slot].push(equipment[slot][item]);
+                node.inventory.equipment[slot][item] = equipment[slot][item]; 
             }
         }
     }
 
     static removeEquipment(node, overwriteConfig) {
-        const equipment = overwriteConfig.addEquipment;
+        const equipment = overwriteConfig.removeEquipment;
         for (const slot in equipment) {
             for (const item in equipment[slot]) {
-                node.inventory.equipment[slot] = node.inventory.equipment[slot].filter(i => i !== equipment[slot][item]);
+                delete node.inventory[item];
             }
         }
     }
