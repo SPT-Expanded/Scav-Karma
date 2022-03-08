@@ -69,33 +69,33 @@
         }
     },
     "addEquipment": {
-        "Headwear": [],
-        "Earpiece": [
-            "5b432b965acfc47a8774094e"
-        ],
-        "FaceCover": [],
-        "ArmorVest": [],
-        "Eyewear": [],
-        "ArmBand": [],
-        "TacticalVest": [],
-        "Backpack": [],
-        "FirstPrimaryWeapon": [],
-        "SecondPrimaryWeapon": [],
-        "Holster": [],
-        "Scabbard": []
+        "Headwear": {},
+        "Earpiece": {
+            "5b432b965acfc47a8774094e": 1
+        },
+        "FaceCover": {},
+        "ArmorVest": {},
+        "Eyewear": {},
+        "ArmBand": {},
+        "TacticalVest": {},
+        "Backpack": {},
+        "FirstPrimaryWeapon": {},
+        "SecondPrimaryWeapon": {},
+        "Holster": {},
+        "Scabbard": {}
     },
     "removeEquipment": {
-        "Headwear": [],
-        "Earpiece": [],
-        "FaceCover": [],
-        "ArmorVest": [],
-        "Eyewear": [],
-        "ArmBand": [],
-        "TacticalVest": [],
-        "Backpack": [],
-        "FirstPrimaryWeapon": [],
-        "SecondPrimaryWeapon": [],
-        "Holster": [],
-        "Scabbard": []
+        "Headwear": {},
+        "Earpiece": {},
+        "FaceCover": {},
+        "ArmorVest": {},
+        "Eyewear": {},
+        "ArmBand": {},
+        "TacticalVest": {},
+        "Backpack": {},
+        "FirstPrimaryWeapon": {},
+        "SecondPrimaryWeapon": {},
+        "Holster": {},
+        "Scabbard": {}
     }
 }
