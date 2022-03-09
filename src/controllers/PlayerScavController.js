@@ -102,7 +102,7 @@ class PlayerScavController {
         const equipment = overwriteConfig.removeEquipment;
         for (const slot in equipment) {
             for (const item in equipment[slot]) {
-                delete node.inventory.equipment[slot][item];
+                delete node.inventory.equipment[slot][equipment[slot][item]];
             }
         }
     }
