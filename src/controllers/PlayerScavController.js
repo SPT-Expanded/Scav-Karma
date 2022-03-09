@@ -78,15 +78,17 @@ class PlayerScavController {
     }
 
     static overwriteItemGeneration(node, overwriteConfig) {
-        node.generation = overwriteConfig.generation;
+        for (const item in overwriteConfig.itemGeneration) {
+            node.generation.items[item] = overwriteConfig.itemGeneration[item];
+        }
     }
 
     static overwriteEquipmentChances(node, overwriteConfig) {
-        node.chances.equipment = overwriteConfig.chances.equipment;
+        node.chances.equipment = overwriteConfig.equipmentChances;
     }
 
     static overwriteModsChances(node, overwriteConfig) {
-        node.chances.mods = overwriteConfig.chances.mods;
+        node.chances.mods = overwriteConfig.modsChances;
     }
 
     static addEquipment(node, overwriteConfig) {
