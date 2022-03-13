@@ -44,7 +44,12 @@
     },
     "addEquipment": {
         "ArmBand": {},
-        "ArmorVest": {},
+        "ArmorVest": {
+            "5648a7494bdc2d9d488b4583": 4,
+            "59e7635f86f7742cbf2c1095": 5,
+            "5c0e5edb86f77461f55ed1f7": 1,
+            "5df8a2ca86f7740bfe6df777": 2
+        },
         "Backpack": {},
         "Earpiece": {},
         "Eyewear": {},
@@ -58,7 +63,13 @@
     },
     "removeEquipment": {
         "ArmBand": [],
-        "ArmorVest": [],
+        "ArmorVest": [
+            "5ab8e4ed86f7742d8e50c7fa",
+            "5ab8e79e86f7742d8b372e78",
+            "5b44d22286f774172b0c9de8",
+            "5c0e53c886f7747fa54205c7",
+            "609e8540d5c319764c2bc2e9"
+        ],
         "Backpack": [],
         "Earpiece": [],
         "Eyewear": [],
