@@ -82,9 +82,16 @@
             "5e54f79686f7744022011103",
             "60363c0c92ec1c31037959f5"
         ],
-        "FirstPrimaryWeapon": [],
+        "FirstPrimaryWeapon": [
+            "5644bd2b4bdc2d3b4c8b4572",
+            "5ab8e9fcd8ce870019439434",
+            "5ac4cd105acfc40016339859",
+            "5ac66d9b5acfc4001633997a"
+        ],
         "Headwear": [],
-        "Holster": [],
+        "Holster": [
+            "56d59856d2720bd8418b456a"
+        ],
         "Scabbard": [],
         "SecondPrimaryWeapon": [],
         "TacticalVest": []
