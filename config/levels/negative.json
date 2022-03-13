@@ -2,16 +2,16 @@
     "equipmentChances": {
         "Headwear": 38,
         "Earpiece": 0,
-        "FaceCover": 14,
-        "ArmorVest": 9,
-        "Eyewear": 1,
+        "FaceCover": 21,
+        "ArmorVest": 17,
+        "Eyewear": 10,
         "ArmBand": 0,
-        "TacticalVest": 34,
-        "Backpack": 7,
-        "FirstPrimaryWeapon": 42,
+        "TacticalVest": 45,
+        "Backpack": 33,
+        "FirstPrimaryWeapon": 51,
         "SecondPrimaryWeapon": 0,
         "Holster": 0,
-        "Scabbard": 89
+        "Scabbard": 90
     },
     "modsChances": {
         "mod_mount": 12,
