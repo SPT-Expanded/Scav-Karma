@@ -68,7 +68,16 @@
         "Holster": [],
         "Scabbard": [],
         "SecondPrimaryWeapon": [],
-        "TacticalVest": []
+        "TacticalVest": [
+            "544a5caa4bdc2d1a388b4568",
+            "5648a69d4bdc2ded0b8b457b",
+            "592c2d1a86f7746dbe2af32a",
+            "5ab8dab586f77441cd04f2a2",
+            "5c0e446786f7742013381639",
+            "5c0e6a1586f77404597b4965",
+            "603648ff5a45383c122086ac",
+            "6040dd4ddcf9592f401632d2"
+        ]
     },
     "itemGeneration": {
         "specialItems": {
