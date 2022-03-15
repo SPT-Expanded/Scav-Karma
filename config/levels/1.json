@@ -37,8 +37,8 @@
         "mod_sight_front": 30,
         "mod_stock_000": 0,
         "mod_stock_akms": 100,
-        "mod_equipment_000": 0,
-        "mod_equipment_001": 0,
+        "mod_equipment_000": 6,
+        "mod_equipment_001": 1,
         "mod_equipment_002": 0,
         "mod_pistol_grip": 0
     },
