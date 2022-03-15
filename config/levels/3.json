@@ -69,7 +69,9 @@
         ],
         "Earpiece": [],
         "Eyewear": [],
-        "FaceCover": [],
+        "FaceCover": [
+            "60363c0c92ec1c31037959f5"
+        ],
         "FirstPrimaryWeapon": [],
         "Headwear": [],
         "Holster": [],
