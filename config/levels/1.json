@@ -103,7 +103,7 @@
         },
         "looseLoot": {
             "min": 0,
-            "max": 3
+            "max": 2
         },
         "magazines": {
             "min": 1,
