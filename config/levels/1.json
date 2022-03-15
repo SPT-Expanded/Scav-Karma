@@ -58,7 +58,12 @@
     },
     "removeEquipment": {
         "ArmBand": [],
-        "ArmorVest": [],
+        "ArmorVest": [
+            "5ab8e79e86f7742d8b372e78",
+            "5b44d22286f774172b0c9de8",
+            "5c0e53c886f7747fa54205c7",
+            "609e8540d5c319764c2bc2e9"
+        ],
         "Backpack": [
             "544a5cde4bdc2d39388b456b",
             "56e335e4d2720b6c058b456d",
