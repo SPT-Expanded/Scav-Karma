@@ -60,7 +60,10 @@
     },
     "removeEquipment": {
         "ArmBand": [],
-        "ArmorVest": [],
+        "ArmorVest": [
+            "5ab8e79e86f7742d8b372e78",
+            "609e8540d5c319764c2bc2e9"
+        ],
         "Backpack": [],
         "Earpiece": [],
         "Eyewear": [],
