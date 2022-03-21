@@ -73,6 +73,9 @@ class PlayerScavController {
         if (config.removeEquipment) {
             PlayerScavController.removeEquipment(node, overwriteConfig);
         }
+        if (config.overwriteHealth) {
+            PlayerScavController.overwriteHealth(node, overwriteConfig);
+        }
 
         return node;
     }
@@ -105,6 +108,17 @@ class PlayerScavController {
         for (const slot in equipment) {
             for (const item in equipment[slot]) {
                 delete node.inventory.equipment[slot][equipment[slot][item]];
+            }
+        }
+    }
+
+    static overwriteHealth(node, overwriteConfig) {
+        for (const preset of node.health.BodyParts) {
+            for (const bodyPart in preset) {
+                console.log(bodyPart, preset[bodyPart])
+                preset[bodyPart].max *= overwriteConfig.overwriteHealth[bodyPart] / 100;
+                preset[bodyPart].min *= overwriteConfig.overwriteHealth[bodyPart] / 100;
+                console.log(bodyPart, preset[bodyPart])
             }
         }
     }
