@@ -115,8 +115,8 @@ class PlayerScavController {
     static overwriteHealth(node, overwriteConfig) {
         for (const preset of node.health.BodyParts) {
             for (const bodyPart in preset) {
-                preset[bodyPart].max *= overwriteConfig.overwriteHealth[bodyPart] / 100;
-                preset[bodyPart].min *= overwriteConfig.overwriteHealth[bodyPart] / 100;
+                preset[bodyPart].max *= overwriteConfig.overwriteHealth[bodyPart];
+                preset[bodyPart].min *= overwriteConfig.overwriteHealth[bodyPart];
             }
         }
     }
