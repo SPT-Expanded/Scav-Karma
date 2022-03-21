@@ -4,5 +4,6 @@
     "overwriteEquipmentChances": true,
     "overwriteModsChances": true,
     "addEquipment": true,
-    "removeEquipment": true
+    "removeEquipment": true,
+    "overwriteHealth": true
 }
