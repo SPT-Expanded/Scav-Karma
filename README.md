@@ -32,18 +32,18 @@ The chances for equipment and modifications, the minimum and maximum amount of i
   <table>
     <h3>Equipment Chances</h3>
     <tr><th>Equipment Type</th><th>Chance of Spawning with in %</th></tr>
-    <tr><td>Headwear</td><td></td></tr>
-    <tr><td>Earpiece</td><td></td></tr>
-    <tr><td>FaceCover</td><td></td></tr>
-    <tr><td>Armor Vest</td><td></td></tr>
-    <tr><td>Eyewear</td><td></td></tr>
-    <tr><td>Arm Band</td><td></td></tr>
-    <tr><td>Tactical Vest</td><td></td></tr>
-    <tr><td>Backpack</td><td></td></tr>
-    <tr><td>First Primary Weapon</td><td></td></tr>
-    <tr><td>Second Primary Weapon</td><td></td></tr>
-    <tr><td>Holster</td><td></td></tr>
-    <tr><td>Scabbard</td><td></td></tr>
+    <tr><td>Headwear</td><td>48</td></tr>
+    <tr><td>Earpiece</td><td>0</td></tr>
+    <tr><td>FaceCover</td><td>24</td></tr>
+    <tr><td>Armor Vest</td><td>19</td></tr>
+    <tr><td>Eyewear</td><td>20</td></tr>
+    <tr><td>Arm Band</td><td>0</td></tr>
+    <tr><td>Tactical Vest</td><td>57</td></tr>
+    <tr><td>Backpack</td><td>38</td></tr>
+    <tr><td>First Primary Weapon</td><td>62</td></tr>
+    <tr><td>Second Primary Weapon</td><td>0</td></tr>
+    <tr><td>Holster</td><td>0</td></tr>
+    <tr><td>Scabbard</td><td>91</td></tr>
   </table>
   <table>
     <h3>Added Equipment</h3>
@@ -81,19 +81,19 @@ The chances for equipment and modifications, the minimum and maximum amount of i
     <h3>Modification Chances</h3>
     <p>More modifications are affected but here are the most important ones.</p>
     <tr><th>Mod Type</th><th>Chance of spawning with in %</th></tr>
-    <tr><td>Scope</td><td></td></tr>
-    <tr><td>Stock</td><td></td></tr>
-    <tr><td>Foregrip</td><td></td></tr>
-    <tr><td>Muzzel</td><td></td></tr>
+    <tr><td>Scope</td><td>9</td></tr>
+    <tr><td>Stock</td><td>46</td></tr>
+    <tr><td>Foregrip</td><td>0</td></tr>
+    <tr><td>Muzzel</td><td>31</td></tr>
   </table>
   <table>
     <h3>Item Minimum and Maximum</h3>
     <tr><th>Item Type</th><th>Minimum amount of spawning with</th><th>Maximum amount of spawning with</th></tr>
-    <tr><td>Special Items</td><td></td><td></td></tr>
-    <tr><td>Healing Items</td><td></td><td></td></tr>
-    <tr><td>Loose Loot</td><td></td><td></td></tr>
-    <tr><td>Magazines</td><td></td><td></td></tr>
-    <tr><td>Grenades</td><td></td><td></td></tr>
+    <tr><td>Special Items</td><td>0</td><td>0</td></tr>
+    <tr><td>Healing Items</td><td>0</td><td>1</td></tr>
+    <tr><td>Loose Loot</td><td>0</td><td>2</td></tr>
+    <tr><td>Magazines</td><td>1</td><td>3</td></tr>
+    <tr><td>Grenades</td><td>0</td><td>1</td></tr>
   </table>
 </details>
 <details>
@@ -101,18 +101,18 @@ The chances for equipment and modifications, the minimum and maximum amount of i
   <table>
     <h3>Equipment Chances</h3>
     <tr><th>Equipment Type</th><th>Chance of Spawning with in %</th></tr>
-    <tr><td>Headwear</td><td></td></tr>
-    <tr><td>Earpiece</td><td></td></tr>
-    <tr><td>FaceCover</td><td></td></tr>
-    <tr><td>Armor Vest</td><td></td></tr>
-    <tr><td>Eyewear</td><td></td></tr>
-    <tr><td>Arm Band</td><td></td></tr>
-    <tr><td>Tactical Vest</td><td></td></tr>
-    <tr><td>Backpack</td><td></td></tr>
-    <tr><td>First Primary Weapon</td><td></td></tr>
-    <tr><td>Second Primary Weapon</td><td></td></tr>
-    <tr><td>Holster</td><td></td></tr>
-    <tr><td>Scabbard</td><td></td></tr>
+    <tr><td>Headwear</td><td>50</td></tr>
+    <tr><td>Earpiece</td><td>2</td></tr>
+    <tr><td>FaceCover</td><td>31</td></tr>
+    <tr><td>Armor Vest</td><td>26</td></tr>
+    <tr><td>Eyewear</td><td>22</td></tr>
+    <tr><td>Arm Band</td><td>0</td></tr>
+    <tr><td>Tactical Vest</td><td>65</td></tr>
+    <tr><td>Backpack</td><td>41</td></tr>
+    <tr><td>First Primary Weapon</td><td>76</td></tr>
+    <tr><td>Second Primary Weapon</td><td>0</td></tr>
+    <tr><td>Holster</td><td>0</td></tr>
+    <tr><td>Scabbard</td><td>94</td></tr>
   </table>
   <table>
     <h3>Added Equipment</h3>
@@ -150,19 +150,19 @@ The chances for equipment and modifications, the minimum and maximum amount of i
     <h3>Modification Chances</h3>
     <p>More modifications are affected but here are the most important ones.</p>
     <tr><th>Mod Type</th><th>Chance of spawning with in %</th></tr>
-    <tr><td>Scope</td><td></td></tr>
-    <tr><td>Stock</td><td></td></tr>
-    <tr><td>Foregrip</td><td></td></tr>
-    <tr><td>Muzzel</td><td></td></tr>
+    <tr><td>Scope</td><td>11</td></tr>
+    <tr><td>Stock</td><td>47</td></tr>
+    <tr><td>Foregrip</td><td>5</td></tr>
+    <tr><td>Muzzel</td><td>35</td></tr>
   </table>
   <table>
     <h3>Item Minimum and Maximum</h3>
     <tr><th>Item Type</th><th>Minimum amount of spawning with</th><th>Maximum amount of spawning with</th></tr>
-    <tr><td>Special Items</td><td></td><td></td></tr>
-    <tr><td>Healing Items</td><td></td><td></td></tr>
-    <tr><td>Loose Loot</td><td></td><td></td></tr>
-    <tr><td>Magazines</td><td></td><td></td></tr>
-    <tr><td>Grenades</td><td></td><td></td></tr>
+    <tr><td>Special Items</td><td>0</td><td>0</td></tr>
+    <tr><td>Healing Items</td><td>0</td><td>2</td></tr>
+    <tr><td>Loose Loot</td><td>1</td><td>3</td></tr>
+    <tr><td>Magazines</td><td>1</td><td>3</td></tr>
+    <tr><td>Grenades</td><td>0</td><td>2</td></tr>
   </table>
 </details>
 <details>
@@ -170,18 +170,18 @@ The chances for equipment and modifications, the minimum and maximum amount of i
   <table>
     <h3>Equipment Chances</h3>
     <tr><th>Equipment Type</th><th>Chance of Spawning with in %</th></tr>
-    <tr><td>Headwear</td><td></td></tr>
-    <tr><td>Earpiece</td><td></td></tr>
-    <tr><td>FaceCover</td><td></td></tr>
-    <tr><td>Armor Vest</td><td></td></tr>
-    <tr><td>Eyewear</td><td></td></tr>
-    <tr><td>Arm Band</td><td></td></tr>
-    <tr><td>Tactical Vest</td><td></td></tr>
-    <tr><td>Backpack</td><td></td></tr>
-    <tr><td>First Primary Weapon</td><td></td></tr>
-    <tr><td>Second Primary Weapon</td><td></td></tr>
-    <tr><td>Holster</td><td></td></tr>
-    <tr><td>Scabbard</td><td></td></tr>
+    <tr><td>Headwear</td><td>60</td></tr>
+    <tr><td>Earpiece</td><td>7</td></tr>
+    <tr><td>FaceCover</td><td>38</td></tr>
+    <tr><td>Armor Vest</td><td>31</td></tr>
+    <tr><td>Eyewear</td><td>26</td></tr>
+    <tr><td>Arm Band</td><td>0</td></tr>
+    <tr><td>Tactical Vest</td><td>71</td></tr>
+    <tr><td>Backpack</td><td>52</td></tr>
+    <tr><td>First Primary Weapon</td><td>80</td></tr>
+    <tr><td>Second Primary Weapon</td><td>0</td></tr>
+    <tr><td>Holster</td><td>3</td></tr>
+    <tr><td>Scabbard</td><td>96</td></tr>
   </table>
   <table>
     <h3>Added Equipment</h3>
@@ -219,19 +219,19 @@ The chances for equipment and modifications, the minimum and maximum amount of i
     <h3>Modification Chances</h3>
     <p>More modifications are affected but here are the most important ones.</p>
     <tr><th>Mod Type</th><th>Chance of spawning with in %</th></tr>
-    <tr><td>Scope</td><td></td></tr>
-    <tr><td>Stock</td><td></td></tr>
-    <tr><td>Foregrip</td><td></td></tr>
-    <tr><td>Muzzel</td><td></td></tr>
+    <tr><td>Scope</td><td>19</td></tr>
+    <tr><td>Stock</td><td>51</td></tr>
+    <tr><td>Foregrip</td><td>13</td></tr>
+    <tr><td>Muzzel</td><td>43</td></tr>
   </table>
   <table>
     <h3>Item Minimum and Maximum</h3>
     <tr><th>Item Type</th><th>Minimum amount of spawning with</th><th>Maximum amount of spawning with</th></tr>
-    <tr><td>Special Items</td><td></td><td></td></tr>
-    <tr><td>Healing Items</td><td></td><td></td></tr>
-    <tr><td>Loose Loot</td><td></td><td></td></tr>
-    <tr><td>Magazines</td><td></td><td></td></tr>
-    <tr><td>Grenades</td><td></td><td></td></tr>
+    <tr><td>Special Items</td><td>0</td><td>0</td></tr>
+    <tr><td>Healing Items</td><td>1</td><td>0</td></tr>
+    <tr><td>Loose Loot</td><td>1</td><td>4</td></tr>
+    <tr><td>Magazines</td><td>1</td><td>4</td></tr>
+    <tr><td>Grenades</td><td>0</td><td>3</td></tr>
   </table>
 </details>
 <details>
@@ -239,18 +239,18 @@ The chances for equipment and modifications, the minimum and maximum amount of i
   <table>
     <h3>Equipment Chances</h3>
     <tr><th>Equipment Type</th><th>Chance of Spawning with in %</th></tr>
-    <tr><td>Headwear</td><td></td></tr>
-    <tr><td>Earpiece</td><td></td></tr>
-    <tr><td>FaceCover</td><td></td></tr>
-    <tr><td>Armor Vest</td><td></td></tr>
-    <tr><td>Eyewear</td><td></td></tr>
-    <tr><td>Arm Band</td><td></td></tr>
-    <tr><td>Tactical Vest</td><td></td></tr>
-    <tr><td>Backpack</td><td></td></tr>
-    <tr><td>First Primary Weapon</td><td></td></tr>
-    <tr><td>Second Primary Weapon</td><td></td></tr>
-    <tr><td>Holster</td><td></td></tr>
-    <tr><td>Scabbard</td><td></td></tr>
+    <tr><td>Headwear</td><td>74</td></tr>
+    <tr><td>Earpiece</td><td>14</td></tr>
+    <tr><td>FaceCover</td><td>41</td></tr>
+    <tr><td>Armor Vest</td><td>36</td></tr>
+    <tr><td>Eyewear</td><td>29</td></tr>
+    <tr><td>Arm Band</td><td>0</td></tr>
+    <tr><td>Tactical Vest</td><td>82</td></tr>
+    <tr><td>Backpack</td><td>63</td></tr>
+    <tr><td>First Primary Weapon</td><td>89</td></tr>
+    <tr><td>Second Primary Weapon</td><td>0</td></tr>
+    <tr><td>Holster</td><td>6</td></tr>
+    <tr><td>Scabbard</td><td>100</td></tr>
   </table>
   <table>
     <h3>Added Equipment</h3>
@@ -288,19 +288,19 @@ The chances for equipment and modifications, the minimum and maximum amount of i
     <h3>Modification Chances</h3>
     <p>More modifications are affected but here are the most important ones.</p>
     <tr><th>Mod Type</th><th>Chance of spawning with in %</th></tr>
-    <tr><td>Scope</td><td></td></tr>
-    <tr><td>Stock</td><td></td></tr>
-    <tr><td>Foregrip</td><td></td></tr>
-    <tr><td>Muzzel</td><td></td></tr>
+    <tr><td>Scope</td><td>26</td></tr>
+    <tr><td>Stock</td><td>60</td></tr>
+    <tr><td>Foregrip</td><td>21</td></tr>
+    <tr><td>Muzzel</td><td>51</td></tr>
   </table>
   <table>
     <h3>Item Minimum and Maximum</h3>
     <tr><th>Item Type</th><th>Minimum amount of spawning with</th><th>Maximum amount of spawning with</th></tr>
-    <tr><td>Special Items</td><td></td><td></td></tr>
-    <tr><td>Healing Items</td><td></td><td></td></tr>
-    <tr><td>Loose Loot</td><td></td><td></td></tr>
-    <tr><td>Magazines</td><td></td><td></td></tr>
-    <tr><td>Grenades</td><td></td><td></td></tr>
+    <tr><td>Special Items</td><td>0</td><td>1</td></tr>
+    <tr><td>Healing Items</td><td>1</td><td>3</td></tr>
+    <tr><td>Loose Loot</td><td>2</td><td>4</td></tr>
+    <tr><td>Magazines</td><td>2</td><td>4</td></tr>
+    <tr><td>Grenades</td><td>1</td><td>3</td></tr>
   </table>
 </details>
 <details>
@@ -308,18 +308,18 @@ The chances for equipment and modifications, the minimum and maximum amount of i
   <table>
     <h3>Equipment Chances</h3>
     <tr><th>Equipment Type</th><th>Chance of Spawning with in %</th></tr>
-    <tr><td>Headwear</td><td></td></tr>
-    <tr><td>Earpiece</td><td></td></tr>
-    <tr><td>FaceCover</td><td></td></tr>
-    <tr><td>Armor Vest</td><td></td></tr>
-    <tr><td>Eyewear</td><td></td></tr>
-    <tr><td>Arm Band</td><td></td></tr>
-    <tr><td>Tactical Vest</td><td></td></tr>
-    <tr><td>Backpack</td><td></td></tr>
-    <tr><td>First Primary Weapon</td><td></td></tr>
-    <tr><td>Second Primary Weapon</td><td></td></tr>
-    <tr><td>Holster</td><td></td></tr>
-    <tr><td>Scabbard</td><td></td></tr>
+    <tr><td>Headwear</td><td>81</td></tr>
+    <tr><td>Earpiece</td><td>17</td></tr>
+    <tr><td>FaceCover</td><td>48</td></tr>
+    <tr><td>Armor Vest</td><td>44</td></tr>
+    <tr><td>Eyewear</td><td>31</td></tr>
+    <tr><td>Arm Band</td><td>0</td></tr>
+    <tr><td>Tactical Vest</td><td>89</td></tr>
+    <tr><td>Backpack</td><td>68</td></tr>
+    <tr><td>First Primary Weapon</td><td>92</td></tr>
+    <tr><td>Second Primary Weapon</td><td>0</td></tr>
+    <tr><td>Holster</td><td>12</td></tr>
+    <tr><td>Scabbard</td><td>100</td></tr>
   </table>
   <table>
     <h3>Added Equipment</h3>
@@ -357,19 +357,19 @@ The chances for equipment and modifications, the minimum and maximum amount of i
     <h3>Modification Chances</h3>
     <p>More modifications are affected but here are the most important ones.</p>
     <tr><th>Mod Type</th><th>Chance of spawning with in %</th></tr>
-    <tr><td>Scope</td><td></td></tr>
-    <tr><td>Stock</td><td></td></tr>
-    <tr><td>Foregrip</td><td></td></tr>
-    <tr><td>Muzzel</td><td></td></tr>
+    <tr><td>Scope</td><td>34</td></tr>
+    <tr><td>Stock</td><td>78</td></tr>
+    <tr><td>Foregrip</td><td>25</td></tr>
+    <tr><td>Muzzel</td><td>56</td></tr>
   </table>
   <table>
     <h3>Item Minimum and Maximum</h3>
     <tr><th>Item Type</th><th>Minimum amount of spawning with</th><th>Maximum amount of spawning with</th></tr>
-    <tr><td>Special Items</td><td></td><td></td></tr>
-    <tr><td>Healing Items</td><td></td><td></td></tr>
-    <tr><td>Loose Loot</td><td></td><td></td></tr>
-    <tr><td>Magazines</td><td></td><td></td></tr>
-    <tr><td>Grenades</td><td></td><td></td></tr>
+    <tr><td>Special Items</td><td>0</td><td>1</td></tr>
+    <tr><td>Healing Items</td><td>2</td><td>3</td></tr>
+    <tr><td>Loose Loot</td><td>2</td><td>4</td></tr>
+    <tr><td>Magazines</td><td>3</td><td>4</td></tr>
+    <tr><td>Grenades</td><td>2</td><td>3</td></tr>
   </table>
 </details>
 <details>
@@ -377,18 +377,18 @@ The chances for equipment and modifications, the minimum and maximum amount of i
   <table>
     <h3>Equipment Chances</h3>
     <tr><th>Equipment Type</th><th>Chance of Spawning with in %</th></tr>
-    <tr><td>Headwear</td><td></td></tr>
-    <tr><td>Earpiece</td><td></td></tr>
-    <tr><td>FaceCover</td><td></td></tr>
-    <tr><td>Armor Vest</td><td></td></tr>
-    <tr><td>Eyewear</td><td></td></tr>
-    <tr><td>Arm Band</td><td></td></tr>
-    <tr><td>Tactical Vest</td><td></td></tr>
-    <tr><td>Backpack</td><td></td></tr>
-    <tr><td>First Primary Weapon</td><td></td></tr>
-    <tr><td>Second Primary Weapon</td><td></td></tr>
-    <tr><td>Holster</td><td></td></tr>
-    <tr><td>Scabbard</td><td></td></tr>
+    <tr><td>Headwear</td><td>90</td></tr>
+    <tr><td>Earpiece</td><td>26</td></tr>
+    <tr><td>FaceCover</td><td>52</td></tr>
+    <tr><td>Armor Vest</td><td>53</td></tr>
+    <tr><td>Eyewear</td><td>37</td></tr>
+    <tr><td>Arm Band</td><td>0</td></tr>
+    <tr><td>Tactical Vest</td><td>100</td></tr>
+    <tr><td>Backpack</td><td>70</td></tr>
+    <tr><td>First Primary Weapon</td><td>100</td></tr>
+    <tr><td>Second Primary Weapon</td><td>8</td></tr>
+    <tr><td>Holster</td><td>16</td></tr>
+    <tr><td>Scabbard</td><td>100</td></tr>
   </table>
   <table>
     <h3>Added Equipment</h3>
