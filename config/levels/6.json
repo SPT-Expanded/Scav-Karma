@@ -97,12 +97,12 @@
         }
     },
     "overwriteHealth": {
-        "Chest": 200,
-        "Head": 200,
-        "LeftArm": 200,
-        "RightArm": 200,
-        "LeftLeg": 200,
-        "RightLeg": 200,
-        "Stomach": 200
+        "Chest": 1.3,
+        "Head": 1.2,
+        "LeftArm": 1.4,
+        "RightArm": 1.4,
+        "LeftLeg": 1.5,
+        "RightLeg": 1.5,
+        "Stomach": 1.3
     }
 }
