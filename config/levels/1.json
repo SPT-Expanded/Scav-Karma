@@ -113,5 +113,14 @@
             "min": 0,
             "max": 1
         }
+    },
+    "overwriteHealth": {
+        "Chest": 1,
+        "Head": 1,
+        "LeftArm": 1,
+        "RightArm": 1,
+        "LeftLeg": 1,
+        "RightLeg": 1,
+        "Stomach": 1
     }
 }
