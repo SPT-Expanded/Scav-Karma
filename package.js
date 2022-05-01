@@ -12,7 +12,7 @@ class ScavKarma {
     load() {
         if (config.enableMod) {
             const PlayerScavController = require("./src/controllers/PlayerScavController");
-            ProfileController.generateScav = PlayerScavController.generateScav;
+            ProfileController.generatePlayerScav = PlayerScavController.generateScav;
         }
     }
 }
