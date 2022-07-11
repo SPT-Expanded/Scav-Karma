@@ -28,12 +28,7 @@ export declare class Watermark {
     protected text: string[];
     protected versionLabel: string;
     initialize(): void;
-    /**
-     * Get a version string (x.x.x) or (x.x.x-BLEEDINGEDGE) OR (X.X.X (18xxx))
-     * @param withEftVersion Include the eft version this spt version was made for
-     * @returns string
-     */
-    getVersionTag(withEftVersion?: boolean): string;
+    getVersionTag(): string;
     getVersionLabel(): string;
     /** Set window title */
     setTitle(): void;

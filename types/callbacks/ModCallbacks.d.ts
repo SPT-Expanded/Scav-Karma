@@ -1,5 +1,5 @@
 import { OnLoad } from "../di/OnLoad";
-import { PostAkiModLoader } from "../loaders/PostAkiModLoader";
+import { DelayedModLoader } from "../loaders/DelayedModLoader";
 import { IHttpConfig } from "../models/spt/config/IHttpConfig";
 import { IHttpServer } from "../models/spt/server/IHttpServer";
 import { ILogger } from "../models/spt/utils/ILogger";
@@ -9,10 +9,10 @@ declare class ModCallbacks extends OnLoad {
     protected logger: ILogger;
     protected httpResponse: HttpResponseUtil;
     protected httpServer: IHttpServer;
-    protected postAkiModLoader: PostAkiModLoader;
+    protected modLoader: DelayedModLoader;
     protected configServer: ConfigServer;
     protected httpConfig: IHttpConfig;
-    constructor(logger: ILogger, httpResponse: HttpResponseUtil, httpServer: IHttpServer, postAkiModLoader: PostAkiModLoader, configServer: ConfigServer);
+    constructor(logger: ILogger, httpResponse: HttpResponseUtil, httpServer: IHttpServer, modLoader: DelayedModLoader, configServer: ConfigServer);
     onLoad(): void;
     getRoute(): string;
     sendBundle(sessionID: string, req: any, resp: any, body: any): void;

@@ -2,10 +2,7 @@ import { ProfileHelper } from "../helpers/ProfileHelper";
 import { TraderHelper } from "../helpers/TraderHelper";
 import { IPmcData } from "../models/eft/common/IPmcData";
 import { IEndOfflineRaidRequestData } from "../models/eft/match/IEndOfflineRaidRequestData";
-import { IGetGroupStatusRequestData } from "../models/eft/match/IGetGroupStatusRequestData";
 import { IGetProfileRequestData } from "../models/eft/match/IGetProfileRequestData";
-import { IJoinMatchRequestData } from "../models/eft/match/IJoinMatchRequestData";
-import { IJoinMatchResult } from "../models/eft/match/IJoinMatchResult";
 import { IStartOfflineRaidRequestData } from "../models/eft/match/IStartOffineRaidRequestData";
 import { IInRaidConfig } from "../models/spt/config/IInRaidConfig";
 import { IMatchConfig } from "../models/spt/config/IMatchConfig";
@@ -23,11 +20,11 @@ export declare class MatchController {
     constructor(saveServer: SaveServer, profileHelper: ProfileHelper, matchLocationService: MatchLocationService, traderHelper: TraderHelper, configServer: ConfigServer);
     getEnabled(): boolean;
     getProfile(info: IGetProfileRequestData): IPmcData[];
+    protected getMatch(location: any): any;
     createGroup(sessionID: string, info: any): any;
     deleteGroup(info: any): void;
-    joinMatch(info: IJoinMatchRequestData, sessionID: string): IJoinMatchResult[];
-    protected getMatch(location: string): any;
-    getGroupStatus(info: IGetGroupStatusRequestData): any;
+    joinMatch(info: any, sessionID: string): any[];
+    getGroupStatus(info: any): any;
     startOfflineRaid(info: IStartOfflineRaidRequestData, sessionID: string): void;
     endOfflineRaid(info: IEndOfflineRaidRequestData, sessionID: string): void;
 }

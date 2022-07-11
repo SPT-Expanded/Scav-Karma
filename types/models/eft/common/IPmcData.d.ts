@@ -6,7 +6,7 @@ import { MemberCategory } from "../../enums/MemberCategory";
 export interface IPmcData {
     _id: string;
     aid: string;
-    savage?: string;
+    savage: string;
     Info: Info;
     Customization: Customization;
     Health: Health;
@@ -27,6 +27,13 @@ export interface IPmcData {
     RepeatableQuests: IPmcDataRepeatableQuest[];
     CarExtractCounts: CarExtractCounts;
     SurvivorClass: SurvivorClass;
+}
+export declare enum SurvivorClass {
+    Unknown = 0,
+    Neutralizer = 1,
+    Marauder = 2,
+    Paramedic = 3,
+    Survivor = 4
 }
 export interface Info {
     EntryPoint: string;
@@ -49,9 +56,6 @@ export interface Info {
     Bans: IBan[];
     BannedState: boolean;
     BannedUntil: number;
-    NeedWipeOptions: any[];
-    lastCompletedWipe: LastCompleted;
-    lastCompletedEvent?: LastCompleted;
 }
 export interface Settings {
     Role: string;
@@ -334,14 +338,4 @@ export interface RagfairInfo {
     offers: IRagfairOffer[];
 }
 export interface CarExtractCounts {
-}
-export declare enum SurvivorClass {
-    Unknown = 0,
-    Neutralizer = 1,
-    Marauder = 2,
-    Paramedic = 3,
-    Survivor = 4
-}
-export interface LastCompleted {
-    $oid: string;
 }

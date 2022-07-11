@@ -26,7 +26,6 @@ export interface ILocationBase {
     DisabledForScav: boolean;
     DisabledScavExits: string;
     Enabled: boolean;
-    EnableCoop: boolean;
     GlobalLootChanceModifier: number;
     IconX: number;
     IconY: number;
@@ -42,7 +41,6 @@ export interface ILocationBase {
     MinDistToFreePoint: number;
     MinMaxBots: MinMaxBot[];
     MinPlayers: number;
-    MaxCoopGroup: number;
     Name: string;
     NewSpawn: boolean;
     OcculsionCullingEnabled: boolean;
@@ -50,8 +48,6 @@ export interface ILocationBase {
     OpenZones: string;
     Preview: Preview;
     RequiredPlayerLevel: number;
-    PmcMaxPlayersInGroup: number;
-    ScavMaxPlayersInGroup: number;
     Rules: string;
     SafeLocation: boolean;
     Scene: Scene;
@@ -59,8 +55,7 @@ export interface ILocationBase {
     UnixDateTime: number;
     _Id: string;
     doors: any[];
-    EscapeTimeLimit: number;
-    EscapeTimeLimitCoop: number;
+    escape_time_limit: number;
     exit_access_time: number;
     exit_count: number;
     exit_time: number;
@@ -68,7 +63,6 @@ export interface ILocationBase {
     filter_ex: string[];
     limits: ILimit[];
     matching_min_seconds: number;
-    GenerateLocalLootCache: boolean;
     maxItemCountInLocation: MaxItemCountInLocation[];
     sav_summon_seconds: number;
     tmp_location_field_remove_me: number;
@@ -112,7 +106,6 @@ export interface BossLocationSpawn {
     BossName: string;
     BossPlayer: boolean;
     BossZone: string;
-    RandomTimeSpawn: boolean;
     Time: number;
     TriggerId: string;
     TriggerName: string;

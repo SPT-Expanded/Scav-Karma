@@ -1128,11 +1128,8 @@ export interface Inertia {
     SprintAccelerationLimits: xyz;
     SideTime: xyz;
     DiagonalTime: xyz;
-    MaxTimeWithoutInput: xyz;
     MinDirectionBlendTime: number;
-    MoveTimeRange: xyz;
-    ProneDirectionAccelerationRange: xyz;
-    ProneSpeedAccelerationRange: xyz;
+    MoveTime: number;
     MinMovementAccelerationRangeRight: xyz;
     MaxMovementAccelerationRangeRight: xyz;
 }

@@ -24,8 +24,6 @@ import { IItemEventRouterResponse } from "../models/eft/itemEvent/IItemEventRout
 import { ILogger } from "../models/spt/utils/ILogger";
 import { ItemEventRouter } from "../routers/ItemEventRouter";
 import { DatabaseServer } from "../servers/DatabaseServer";
-import { FenceService } from "../services/FenceService";
-import { RagfairOfferService } from "../services/RagfairOfferService";
 import { HashUtil } from "../utils/HashUtil";
 import { JsonUtil } from "../utils/JsonUtil";
 export declare class InventoryController {
@@ -33,14 +31,12 @@ export declare class InventoryController {
     protected hashUtil: HashUtil;
     protected jsonUtil: JsonUtil;
     protected databaseServer: DatabaseServer;
-    protected fenceService: FenceService;
     protected presetHelper: PresetHelper;
     protected inventoryHelper: InventoryHelper;
-    protected ragfairOfferService: RagfairOfferService;
     protected profileHelper: ProfileHelper;
     protected paymentHelper: PaymentHelper;
     protected itemEventRouter: ItemEventRouter;
-    constructor(logger: ILogger, hashUtil: HashUtil, jsonUtil: JsonUtil, databaseServer: DatabaseServer, fenceService: FenceService, presetHelper: PresetHelper, inventoryHelper: InventoryHelper, ragfairOfferService: RagfairOfferService, profileHelper: ProfileHelper, paymentHelper: PaymentHelper, itemEventRouter: ItemEventRouter);
+    constructor(logger: ILogger, hashUtil: HashUtil, jsonUtil: JsonUtil, databaseServer: DatabaseServer, presetHelper: PresetHelper, inventoryHelper: InventoryHelper, profileHelper: ProfileHelper, paymentHelper: PaymentHelper, itemEventRouter: ItemEventRouter);
     /**
     * Move Item
     * change location of item with parentId and slotId
@@ -97,19 +93,9 @@ export declare class InventoryController {
     tagItem(pmcData: IPmcData, body: IInventoryTagRequestData, sessionID: string): IItemEventRouterResponse;
     bindItem(pmcData: IPmcData, body: IInventoryBindRequestData, sessionID: string): IItemEventRouterResponse;
     /**
-     * Handles examining an item
-     * @param pmcData player profile
-     * @param body request object
-     * @param sessionID session id
-     * @returns response
+     * Handles examining of the item     *
      */
     examineItem(pmcData: IPmcData, body: IInventoryExamineRequestData, sessionID: string): IItemEventRouterResponse;
-    /**
-     * Get the tplid of an item from the examine request object
-     * @param body response request
-     * @returns tplid
-     */
-    protected getItemTpl(body: IInventoryExamineRequestData): string;
     readEncyclopedia(pmcData: IPmcData, body: IInventoryReadEncyclopediaRequestData, sessionID: string): IItemEventRouterResponse;
     /**
      * Handles sorting of Inventory.
