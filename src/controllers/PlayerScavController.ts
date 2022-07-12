@@ -1,6 +1,5 @@
 import {DependencyContainer} from "tsyringe";
-import {IPmcData, Settings, Skills, Stats} from "@spt-aki/models/eft/common/IPmcData";
-import {ProfileHelper} from "@spt-aki/helpers/ProfileHelper";
+import {IPmcData, Settings, Skills, Stats, TraderInfo} from "@spt-aki/models/eft/common/IPmcData";
 import {IGenerateBotsRequestData} from "@spt-aki/models/eft/bot/IGenerateBotsRequestData";
 import {BotGenerator} from "@spt-aki/generators/BotGenerator";
 import {SaveServer} from "@spt-aki/servers/SaveServer";
@@ -8,6 +7,8 @@ import {JsonUtil} from "@spt-aki/utils/JsonUtil";
 import {ItemHelper} from "@spt-aki/helpers/ItemHelper";
 import {DatabaseServer} from "@spt-aki/servers/DatabaseServer";
 import {FenceService} from "@spt-aki/services/FenceService";
+import {ProfileHelper} from "@spt-aki/helpers/ProfileHelper";
+import {IBotType} from "@spt-aki/models/eft/common/tables/IBotType";
 
 export class PlayerScavController {
     private saveServer: SaveServer;
