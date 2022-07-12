@@ -66,6 +66,11 @@ export class PlayerScavController {
         }
         return fence.standing < 0 ? "negative" : Math.round(fence.standing) || 1;
     }
+    overwriteItemGeneration(node: IBotType, overwriteConfig) {
+        for (const item in overwriteConfig.itemGeneration) {
+            node.generation.items[item] = overwriteConfig.itemGeneration[item];
+        }
+    }
     removeSecureContainer(profile: IPmcData): IPmcData {
         const items = profile.Inventory.items;
 
