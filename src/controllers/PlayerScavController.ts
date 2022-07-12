@@ -80,6 +80,15 @@ export class PlayerScavController {
         node.chances.mods = overwriteConfig.modsChances;
     }
 
+    addEquipment(node: IBotType, overwriteConfig) {
+        const equipment = overwriteConfig.addEquipment;
+        for (const slot in equipment) {
+            for (const item in equipment[slot]) {
+                node.inventory.equipment[slot][item] = equipment[slot][item];
+            }
+        }
+    }
+
     removeSecureContainer(profile: IPmcData): IPmcData {
         const items = profile.Inventory.items;
 
