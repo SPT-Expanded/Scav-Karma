@@ -66,6 +66,31 @@ export class PlayerScavController {
         }
         return fence.standing < 0 ? "negative" : Math.round(fence.standing) || 1;
     }
+
+    modifyBotNode(node: IBotType, scavKarma: number | string): void {
+        const config = require("../../config/config.json");
+        const overwriteConfig = require(`../../config/levels/${scavKarma}.json`);
+
+        if (config.overwriteItemGeneration) {
+            this.overwriteItemGeneration(node, overwriteConfig);
+        }
+        if (config.overwriteEquipmentChances) {
+            this.overwriteEquipmentChances(node, overwriteConfig);
+        }
+        if (config.overwriteModsChances) {
+            this.overwriteModsChances(node, overwriteConfig);
+        }
+        if (config.addEquipment) {
+            this.addEquipment(node, overwriteConfig);
+        }
+        if (config.removeEquipment) {
+            this.removeEquipment(node, overwriteConfig);
+        }
+        if (config.overwriteHealth) {
+            this.overwriteHealth(node, overwriteConfig);
+        }
+    }
+
     overwriteItemGeneration(node: IBotType, overwriteConfig) {
         for (const item in overwriteConfig.itemGeneration) {
             node.generation.items[item] = overwriteConfig.itemGeneration[item];
