@@ -98,6 +98,15 @@ export class PlayerScavController {
         }
     }
 
+    overwriteHealth(node: IBotType, overwriteConfig) {
+        for (const preset of node.health.BodyParts) {
+            for (const bodyPart in preset) {
+                preset[bodyPart].max *= overwriteConfig.overwriteHealth[bodyPart];
+                preset[bodyPart].min *= overwriteConfig.overwriteHealth[bodyPart];
+            }
+        }
+    }
+
     removeSecureContainer(profile: IPmcData): IPmcData {
         const items = profile.Inventory.items;
 
