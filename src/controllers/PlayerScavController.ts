@@ -30,6 +30,7 @@ export class PlayerScavController {
 
     generatePlayerScav(sessionID: string): IPmcData {
         const pmcData = this.profileHelper.getPmcProfile(sessionID);
+        const scavKarma = this.getScavKarma(pmcData);
 
         const settings: IGenerateBotsRequestData = {
             conditions: [
@@ -58,6 +59,13 @@ export class PlayerScavController {
         return scavData;
     }
 
+    getScavKarma(pmcData: IPmcData): number | string {
+        const fence: TraderInfo = pmcData.TradersInfo["579dc571d53a0658a154fbec"];
+        if (!fence.unlocked) {
+            return 1
+        }
+        return fence.standing < 0 ? "negative" : Math.round(fence.standing) || 1;
+    }
     removeSecureContainer(profile: IPmcData): IPmcData {
         const items = profile.Inventory.items;
 
