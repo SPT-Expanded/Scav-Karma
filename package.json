@@ -21,6 +21,7 @@
         "typescript": "4.6.4",
         "copyfiles": "2.4.1",
         "bestzip": "2.2.1",
-        "eslint": "7.26.0"
+        "eslint": "7.26.0",
+        "winston": "^3.8.1"
     }
 }
