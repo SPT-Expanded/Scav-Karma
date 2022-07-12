@@ -71,6 +71,11 @@ export class PlayerScavController {
             node.generation.items[item] = overwriteConfig.itemGeneration[item];
         }
     }
+
+    overwriteEquipmentChances(node: IBotType, overwriteConfig) {
+        node.chances.equipment = overwriteConfig.equipmentChances;
+    }
+
     removeSecureContainer(profile: IPmcData): IPmcData {
         const items = profile.Inventory.items;
 
