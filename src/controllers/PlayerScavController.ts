@@ -34,7 +34,7 @@ export class PlayerScavController {
         const scavKarma = this.getScavKarma(pmcData);
 
         let node: IBotType = this.databaseServer.getTables().bots.types["assault"];
-        const originalNode: IBotType = node;
+        const originalNode: IBotType = this.jsonUtil.clone(node);
 
         this.modifyBotNode(node, scavKarma);
 
