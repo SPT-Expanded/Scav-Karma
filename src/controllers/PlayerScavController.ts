@@ -9,8 +9,6 @@ import {ItemHelper} from "@spt-aki/helpers/ItemHelper";
 import {DatabaseServer} from "@spt-aki/servers/DatabaseServer";
 import {FenceService} from "@spt-aki/services/FenceService";
 
-import {ScavDataGenerator} from "./ScavDataGenerator";
-
 export class PlayerScavController {
     private saveServer: SaveServer;
     private databaseServer: DatabaseServer;
@@ -19,10 +17,8 @@ export class PlayerScavController {
     private botGenerator: BotGenerator;
     private profileHelper: ProfileHelper;
     private jsonUtil: JsonUtil;
-    private readonly container: DependencyContainer;
 
     constructor(container: DependencyContainer) {
-        this.container = container;
         this.saveServer = container.resolve("SaveServer");
         this.databaseServer = container.resolve("DatabaseServer");
         this.itemHelper = container.resolve("ItemHelper");
@@ -44,7 +40,7 @@ export class PlayerScavController {
                 }
             ]
         }
-        let scavData = <IPmcData><unknown>new ScavDataGenerator(this.container).generateScavData();
+        let scavData = <IPmcData><unknown>this.botGenerator.generate(settings, true)[0];
 
         scavData._id = pmcData.savage;
         scavData.aid = sessionID;
