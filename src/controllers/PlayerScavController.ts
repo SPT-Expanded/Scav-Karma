@@ -32,6 +32,11 @@ export class PlayerScavController {
         const pmcData = this.profileHelper.getPmcProfile(sessionID);
         const scavKarma = this.getScavKarma(pmcData);
 
+        let node: IBotType = this.databaseServer.getTables().bots.types["assault"];
+        const originalNode: IBotType = node;
+
+        this.modifyBotNode(node, scavKarma);
+
         const settings: IGenerateBotsRequestData = {
             conditions: [
                 {
@@ -54,6 +59,8 @@ export class PlayerScavController {
 
         scavData = this.removeSecureContainer(scavData);
         scavData = this.setScavCooldownTimer(scavData, pmcData);
+
+        this.databaseServer.getTables().bots.types["assault"] = originalNode;
 
         this.saveServer.getProfile(sessionID).characters.scav = scavData;
         return scavData;
