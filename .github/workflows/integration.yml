@@ -27,7 +27,7 @@ jobs:
           mv LICENSE build/
           mv package.json build/
       - name: Zip files
-        run: zip build/ mod.zip
+        run: zip -r mod.zip build/
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Create Release
