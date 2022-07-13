@@ -35,6 +35,8 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: mod
+      - name: Check
+        run: ls -R
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Create Release
