@@ -1,4 +1,5 @@
 <p align="center">
+  <img src="https://i.imgur.com/uaTrldV.png" width="128"/>
   <h1 align="center">Scav Karma Expanded</h1>
   <p align="center">
     Scav Karma Expanded adds missing scav karma features to SPT-AKI.
