@@ -10,7 +10,7 @@ import {FenceService} from "@spt-aki/services/FenceService";
 import {ProfileHelper} from "@spt-aki/helpers/ProfileHelper";
 import {IBotType} from "@spt-aki/models/eft/common/tables/IBotType";
 
-export class PlayerScavController {
+export class PlayerScavGenerator {
     private saveServer: SaveServer;
     private databaseServer: DatabaseServer;
     private itemHelper: ItemHelper;
