@@ -3,7 +3,7 @@ import {IMod} from "@spt-aki/models/external/mod";
 import {StaticRouterModService} from "@spt-aki/services/mod/staticRouter/StaticRouterModService";
 import {HttpResponseUtil} from "@spt-aki/utils/HttpResponseUtil";
 
-import {PlayerScavGenerator} from "./controllers/PlayerScavGenerator";
+import {PlayerScavGenerator} from "./generators/PlayerScavGenerator";
 
 class Mod implements IMod {
     private config = require("../config/config.json");
