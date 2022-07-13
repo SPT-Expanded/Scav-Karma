@@ -20,7 +20,7 @@ jobs:
       - name: Compile code
         run: tsc --build
       - name: Remove unused files
-        run: rm -rf src/*.ts src/**/*.ts types/ .github/ .gitignore README.md tsconfig.json
+        run: rm src/mod.ts && rm src/**/*.ts && rm -rf types/ && rm -rf .github/ && rm .gitignore && rm README.md && rm tsconfig.json
       - name: Create artifact
         uses: actions/upload-artifact@v3
         with:
