@@ -8,8 +8,8 @@
     "akiVersion": ">=3.0.0",
     "scripts": {
         "build": "tsc --build",
-        "build:dist": "tsc --build && mkdirp dist/ && copyfiles src/**/*.js config/**/* package.json LICENSE dist/",
-        "zip": "mkdirp build/ && cd dist/ && bestzip --level 9 build/mod.zip *",
+        "build:dist": "tsc --build && mkdirp dist/scav-karma && copyfiles src/**/*.js config/**/* package.json LICENSE dist/scav-karma",
+        "zip": "mkdirp build/ && cd dist/ && bestzip --level 9 ../build/mod.zip *",
         "build:release": "npm run clean && npm run build:dist && npm run zip && npm run clean",
         "clean": "tsc --build --clean"
     },
