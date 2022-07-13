@@ -7,8 +7,8 @@ on:
 name: Create Release
 
 jobs:
-  build:
-    name: Build Project
+  build-release:
+    name: Build and Create Release
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -19,17 +19,13 @@ jobs:
         run: mkdir build
       - name: Compile code
         run: tsc --build
-      - name: Move files
-        run: mv src/**/*.js build/ && mv config/ build/ && mv package.json build/ && mv LICENSE build/
+      - name: Remove unused files
+        run: rm -rf src/*.ts src/**/*.ts types/ .github/ .gitignore README.md tsconfig.json
       - name: Create artifact
         uses: actions/upload-artifact@v3
         with:
           name: mod
-          path: build/
-  release:
-    name: Create Release
-    runs-on: ubuntu-latest
-    steps:
+          path: .
       - name: Download artifact
         uses: actions/download-artifact@v3
         with:
