@@ -1,9 +1,7 @@
 <p align="center">
-  <h3 align="center">SPT-Expanded Scav Karma</h3>
+  <h1 align="center">Scav Karma Expanded</h1>
   <p align="center">
-    Scav Karma adds missing scav karma features to SPT-AKI.
-    <br />
-    <a href="https://github.com/SPT-Expanded/Scav-Karma/wiki"><strong>Explore the docs »</strong></a>
+    Scav Karma Expanded adds missing scav karma features to SPT-AKI.
     <br />
     <br />
     <a href="https://github.com/SPT-Expanded/Scav-Karma/issues">Report Bug</a>
