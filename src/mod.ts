@@ -3,7 +3,7 @@ import {IMod} from "@spt-aki/models/external/mod";
 import {StaticRouterModService} from "@spt-aki/services/mod/staticRouter/StaticRouterModService";
 import {HttpResponseUtil} from "@spt-aki/utils/HttpResponseUtil";
 
-import {PlayerScavController} from "./controllers/PlayerScavController";
+import {PlayerScavGenerator} from "./controllers/PlayerScavGenerator";
 
 class Mod implements IMod {
     private config = require("../config/config.json");
@@ -21,7 +21,7 @@ class Mod implements IMod {
             [{
                 url: "/client/game/profile/savage/regenerate",
                 action: (url, info, sessionID, output) => {
-                    return httpResponse.getBody([new PlayerScavController(container).generatePlayerScav(sessionID)]);
+                    return httpResponse.getBody([new PlayerScavGenerator(container).generatePlayerScav(sessionID)]);
                 }
             }],
             "aki"
