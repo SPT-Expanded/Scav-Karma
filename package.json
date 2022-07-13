@@ -1,8 +1,24 @@
 {
-    "name": "SPT-Expanded Scav Karma",
-    "author": "citharus",
-    "version": "2.2.0",
-    "akiVersion": "2.3.*",
+    "name": "spt-expanded-scav-karma",
+    "displayName": "SPT Expanded Scav Karma",
+    "version": "3.0.0",
+    "main": "src/mod.js",
     "license": "NCSA Open Source",
-    "main": "package.js"
+    "author": "citharus",
+    "akiVersion": ">=3.0.0",
+    "scripts": {
+        "build": "tsc --build",
+        "clean": "tsc --build"
+    },
+    "devDependencies": {
+        "@types/node": "^14.15.3",
+        "@typescript-eslint/eslint-plugin": "^4.33.0",
+        "@typescript-eslint/parser": "^4.33.0",
+        "tsyringe": "4.6.0",
+        "typescript": "4.6.4",
+        "copyfiles": "2.4.1",
+        "bestzip": "2.2.1",
+        "eslint": "7.26.0",
+        "winston": "^3.8.1"
+    }
 }
