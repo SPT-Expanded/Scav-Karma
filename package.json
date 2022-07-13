@@ -8,7 +8,10 @@
     "akiVersion": ">=3.0.0",
     "scripts": {
         "build": "tsc --build",
-        "clean": "tsc --build"
+        "build:dist": "tsc --build && mkdirp dist/ && copyfiles src/**/*.js config/**/* package.json LICENSE dist/",
+        "zip": "mkdirp build/ && bestzip --level 9 build/mod.zip dist/*",
+        "build:release": "npm run clean && npm run build:dist && npm run zip && npm run clean",
+        "clean": "tsc --build --clean"
     },
     "devDependencies": {
         "@types/node": "^14.15.3",
