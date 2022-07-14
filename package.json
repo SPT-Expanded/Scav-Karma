@@ -3,7 +3,7 @@
     "displayName": "SPT Expanded Scav Karma",
     "version": "3.0.0",
     "main": "src/mod.js",
-    "license": "NCSA Open Source",
+    "license": "MIT",
     "author": "citharus",
     "akiVersion": ">=3.0.0",
     "scripts": {
