@@ -5,9 +5,11 @@
     Scav Karma Expanded adds missing scav karma features to SPT-AKI.
     <br />
     <br />
-    <a href="https://github.com/SPT-Expanded/Scav-Karma/issues">Report Bug</a>
+    <a href="https://github.com/spt-mods/Scav-Karma/issues">Report Bug</a>
     ·
-    <a href="https://github.com/SPT-Expanded/Scav-Karma/issues">Request Feature</a>
+    <a href="https://github.com/spt-mods/Scav-Karma/issues">Request Feature</a>
+    ·
+    <a href="https://github.com/spt-mods/Scav-Karma/wiki">Explore Wiki</a>
   </p>
 </p>
 
