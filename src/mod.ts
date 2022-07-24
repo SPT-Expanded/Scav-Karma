@@ -1,14 +1,14 @@
 import {DependencyContainer} from "tsyringe";
-import {IMod} from "@spt-aki/models/external/mod";
+import {IPreAkiLoadMod} from "@spt-aki/models/external/IPreAkiLoadMod";
 import {StaticRouterModService} from "@spt-aki/services/mod/staticRouter/StaticRouterModService";
 import {HttpResponseUtil} from "@spt-aki/utils/HttpResponseUtil";
 
 import {PlayerScavGenerator} from "./generators/PlayerScavGenerator";
 
-class Mod implements IMod {
+class Mod implements IPreAkiLoadMod {
     private config = require("../config/config.json");
 
-    public load(container: DependencyContainer): void {
+    public preAkiLoad(container: DependencyContainer): void {
         const staticRouterModService = container.resolve<StaticRouterModService>("StaticRouterModService");
         const httpResponse = container.resolve<HttpResponseUtil>("HttpResponseUtil");
 
@@ -26,9 +26,6 @@ class Mod implements IMod {
             }],
             "aki"
         )
-    }
-
-    public delayedLoad(container: DependencyContainer): void {
     }
 }
 
