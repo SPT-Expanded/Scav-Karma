@@ -7,11 +7,10 @@
     "author": "citharus",
     "akiVersion": ">=3.1.0",
     "scripts": {
-        "build": "tsc --build",
         "build:dist": "tsc --build && mkdirp dist/scav-karma && copyfiles src/**/*.js config/**/* package.json LICENSE dist/scav-karma",
         "build:zip": "mkdirp build/ && cd dist/ && bestzip --level 9 ../build/mod.zip *",
-        "build:release": "npm run clean && npm run build:dist && npm run zip && npm run clean",
-        "clean": "tsc --build --clean && rd /s /q build dist"
+        "build:clean": "tsc --build --clean && rd /s /q build dist",
+        "build:release": "npm run build:dist && npm run build:zip"
     },
     "devDependencies": {
         "@types/node": "^14.15.3",
