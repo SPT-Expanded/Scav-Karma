@@ -1,7 +1,7 @@
 {
     "name": "spt-expanded-scav-karma",
     "displayName": "SPT Expanded Scav Karma",
-    "version": "3.0.1",
+    "version": "3.0.2",
     "main": "src/mod.js",
     "license": "MIT",
     "author": "citharus",
