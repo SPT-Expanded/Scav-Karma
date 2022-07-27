@@ -5,7 +5,7 @@
     "main": "src/mod.js",
     "license": "MIT",
     "author": "citharus",
-    "akiVersion": "3.1.0",
+    "akiVersion": ">=3.1.0",
     "scripts": {
         "build": "tsc --build",
         "build:dist": "tsc --build && mkdirp dist/scav-karma && copyfiles src/**/*.js config/**/* package.json LICENSE dist/scav-karma",
