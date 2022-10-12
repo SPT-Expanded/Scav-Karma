@@ -6,7 +6,7 @@ import {IPostAkiLoadMod} from "@spt-aki/models/external/IPostAkiLoadMod";
 class Mod implements IPostAkiLoadMod {
     private config = require("../config/config.json");
 
-    public postAkiLoad(container: DependencyContainer): void {
+    postAkiLoad(container: DependencyContainer): void {
         if (!this.config.enable) {
             return;
         }
