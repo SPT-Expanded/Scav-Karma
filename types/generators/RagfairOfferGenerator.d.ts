@@ -39,17 +39,46 @@ export declare class RagfairOfferGenerator {
     protected ragfairConfig: IRagfairConfig;
     constructor(logger: ILogger, jsonUtil: JsonUtil, hashUtil: HashUtil, randomUtil: RandomUtil, timeUtil: TimeUtil, databaseServer: DatabaseServer, ragfairServerHelper: RagfairServerHelper, saveServer: SaveServer, presetHelper: PresetHelper, ragfairAssortGenerator: RagfairAssortGenerator, ragfairOfferService: RagfairOfferService, ragfairPriceService: RagfairPriceService, ragfairCategoriesService: RagfairCategoriesService, fenceService: FenceService, itemHelper: ItemHelper, configServer: ConfigServer);
     createOffer(userID: string, time: number, items: Item[], barterScheme: IBarterScheme[], loyalLevel: number, price: number, sellInOnePiece?: boolean): IRagfairOffer;
+    /**
+     * Convert a count of currency into roubles
+     * @param currencyCount amount of currency to convert into roubles
+     * @param currencyType Type of currency (euro/dollar/rouble)
+     * @returns count of roubles
+     */
+    protected calculateRoublePrice(currencyCount: number, currencyType: string): number;
     protected getTraderId(userID: string): string;
     protected getRating(userID: string): number;
+    /**
+     * Is the offers user rating growing
+     * @param userID user to check rating of
+     * @returns true if its growing
+     */
     protected getRatingGrowing(userID: string): boolean;
+    /**
+     * Get number of section until offer should expire
+     * @param userID Id of the offer owner
+     * @param time Time the offer is posted
+     * @returns number of seconds until offer expires
+     */
     protected getOfferEndTime(userID: string, time: number): number;
     /**
      * Create multiple offers for items by using a unique list of items we've generated previously
-     * @param expiredOffers
+     * @param expiredOffers optional, expired offers to regenerate
      */
     generateDynamicOffers(expiredOffers?: Item[]): void;
-    generateTraderOffers(traderID: string): void;
+    /**
+     * Generate trader offers on flea using the traders assort data
+     * @param traderID Trader to generate offers for
+     */
+    generateFleaOffersForTrader(traderID: string): void;
     protected getItemCondition(userID: string, items: Item[], itemDetails: ITemplateItem): Item[];
+    /**
+     * Add missing conditions to an item if needed
+     * Durabiltiy for repairable items
+     * HpResource for medical items
+     * @param item item to add conditions to
+     * @returns Item with conditions added
+     */
     protected addMissingCondition(item: Item): Item;
     protected getOfferRequirements(items: Item[]): {
         count: number;
@@ -57,6 +86,14 @@ export declare class RagfairOfferGenerator {
     }[];
     /**
      * Create a flea offer and store it in the Ragfair server offers array
+     * @param userID owner of the offer
+     * @param time time offer is put up
+     * @param items items in the offer
+     * @param barterScheme
+     * @param loyalLevel
+     * @param price price of offer
+     * @param sellInOnePiece
+     * @returns
      */
     createFleaOffer(userID: string, time: number, items: Item[], barterScheme: IBarterScheme[], loyalLevel: number, price: number, sellInOnePiece?: boolean): IRagfairOffer;
 }
