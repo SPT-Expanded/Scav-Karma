@@ -1,31 +1,12 @@
 import {DependencyContainer} from "tsyringe";
-import {IPreAkiLoadMod} from "@spt-aki/models/external/IPreAkiLoadMod";
-import {StaticRouterModService} from "@spt-aki/services/mod/staticRouter/StaticRouterModService";
-import {HttpResponseUtil} from "@spt-aki/utils/HttpResponseUtil";
+import {PlayerScavGenerator} from "@spt-aki/generators/PlayerScavGenerator";
+import {CustomPlayerScavGenerator} from "./generators/CustomPlayerScavGenerator";
+import {IPostAkiLoadMod} from "@spt-aki/models/external/IPostAkiLoadMod";
 
-import {PlayerScavGenerator} from "./generators/PlayerScavGenerator";
-
-class Mod implements IPreAkiLoadMod {
-    private config = require("../config/config.json");
-
-    public preAkiLoad(container: DependencyContainer): void {
-        if (!this.config.enableMod) {
-            return;
-        }
-
-        const staticRouterModService = container.resolve<StaticRouterModService>("StaticRouterModService");
-        const httpResponse = container.resolve<HttpResponseUtil>("HttpResponseUtil");
-
-        staticRouterModService.registerStaticRouter(
-            "StaticRouteRegeneratePlayerScav",
-            [{
-                url: "/client/game/profile/savage/regenerate",
-                action: (url, info, sessionID, output) => {
-                    return httpResponse.getBody([new PlayerScavGenerator(container).generatePlayerScav(sessionID)]);
-                }
-            }],
-            "aki"
-        )
+class Mod implements IPostAkiLoadMod {
+    public postAkiLoad(container: DependencyContainer): void {
+        container.register<CustomPlayerScavGenerator>("CustomPlayerScavGenerator", CustomPlayerScavGenerator);
+        container.register("PlayerScavGenerator", {useToken: "CustomPlayerScavGenerator"})
     }
 }
 
