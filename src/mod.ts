@@ -12,7 +12,7 @@ class Mod implements IPostAkiLoadMod {
         }
 
         container.register<CustomPlayerScavGenerator>("CustomPlayerScavGenerator", CustomPlayerScavGenerator);
-        container.register("PlayerScavGenerator", {useToken: "CustomPlayerScavGenerator"})
+        container.register("PlayerScavGenerator", {useToken: "CustomPlayerScavGenerator"});
     }
 }
 
