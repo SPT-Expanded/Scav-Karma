@@ -1,0 +1,89 @@
+{
+  "botTypeForLoot": "",
+  "equipmentBlacklist": {
+    "ArmBand": [],
+    "ArmorVest": [],
+    "Backpack": [],
+    "Earpiece": [],
+    "Eyewear": [],
+    "FaceCover": [],
+    "FirstPrimaryWeapon": [],
+    "Headwear": [],
+    "Holster": [],
+    "Scabbard": [],
+    "SecondPrimaryWeapon": [],
+    "TacticalVest": []
+  },
+  "equipmentWhitelist": {
+    "ArmBand": {},
+    "ArmorVest": {},
+    "Backpack": {},
+    "Earpiece": {},
+    "Eyewear": {},
+    "FaceCover": {},
+    "FirstPrimaryWeapon": {},
+    "Headwear": {},
+    "Holster": {},
+    "Scabbard": {},
+    "SecondPrimaryWeapon": {},
+    "TacticalVest": {}
+  },
+  "modifiers": {
+    "equipment": {
+      "ArmBand": null,
+      "ArmorVest": null,
+      "Backpack": null,
+      "Earpiece": null,
+      "Eyewear": null,
+      "FaceCover": null,
+      "FirstPrimaryWeapon": null,
+      "Headwear": null,
+      "Holster": null,
+      "Scabbard": null,
+      "SecondPrimaryWeapon": null,
+      "TacticalVest": null
+    },
+    "mod": {
+      "mod_mount": null,
+      "mod_mount_000": null,
+      "mod_muzzle": null,
+      "mod_tactical_001": null,
+      "mod_tactical_002": null,
+      "mod_stock": null,
+      "mod_charge": null,
+      "mod_sight_rear": null,
+      "mod_sight_front": null,
+      "mod_equipment": null,
+      "mod_mount_001": null,
+      "mod_scope": null,
+      "mod_tactical": null,
+      "mod_pistol_grip": null
+    }
+  },
+  "itemLimits": {
+    "healing": {
+      "min": null,
+      "max": null
+    },
+    "drugs": {
+      "min": null,
+      "max": null
+    },
+    "stims": {
+      "min": null,
+      "max": null
+    },
+    "looseLoot": {
+      "min": null,
+      "max": null
+    },
+    "magazines": {
+      "min": null,
+      "max": null
+    },
+    "grenades": {
+      "min": null,
+      "max": null
+    }
+  }
+}
