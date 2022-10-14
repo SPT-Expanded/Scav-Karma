@@ -9,6 +9,7 @@ export function adjustPlayerScavKarmaSettingsWithKarmaSpecificUserSettings(scavK
     if (config.enableWhitelist) adjustEquipmentWhitelist(settings.equipmentWhitelist, karmaLevel);
     if (config.adjustModifiers) adjustModifiers(settings.modifiers, karmaLevel);
     if (config.adjustItemLimits) adjustItemLimits(settings.itemLimits, karmaLevel);
+    if (config.adjustHealth) adjustHealth(settings.health, karmaLevel);
 }
 
 function adjustBotTypeForLoot(botTypeForLoot: string, karmaLevel: KarmaLevel) {
@@ -87,3 +88,14 @@ function adjustItemLimits(itemLimits: ItemLimits, karmaLevel: KarmaLevel) {
     }
 }
 
+function adjustHealth(health: Record<string, number>, karmaLevel: KarmaLevel) {
+    if (!health) {
+        return;
+    }
+
+    karmaLevel.health = {};
+
+    for (const bodyPart in health) {
+        karmaLevel.health[bodyPart] = health[bodyPart];
+    }
+}

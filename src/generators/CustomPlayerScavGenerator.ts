@@ -97,5 +97,10 @@ export class CustomPlayerScavGenerator extends PlayerScavGenerator {
                 karmaSettings.equipmentWhitelist[equipmentType]
             );
         }
+
+        //Adjust BodyParts health with karma specific user settings.
+        for (const bodyPart in karmaSettings.health) {
+            baseBotNode.health.BodyParts[0][bodyPart] = {min: karmaSettings.health[bodyPart], max: karmaSettings.health[bodyPart]};
+        }
     }
 }
