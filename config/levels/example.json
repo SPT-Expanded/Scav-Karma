@@ -1,0 +1,15 @@
+{
+  "botTypeForLoot": "bear",
+  "equipmentBlacklist": {
+    "Backpack": [
+      "60a272cc93ef783291411d8e",
+      "62a1b7fbc30cfa1d366af586",
+      "6034d2d697633951dc245ea6"
+    ]
+  },
+  "itemLimits": {
+    "grenades": {
+      "max": 10
+    }
+  }
+}
