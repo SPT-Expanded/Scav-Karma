@@ -1,13 +1,14 @@
 import {ItemLimits, KarmaLevel, Modifiers} from "@spt-aki/models/spt/config/IPlayerScavConfig";
+import config = require("../config/config.json");
 
 export function adjustPlayerScavKarmaSettingsWithKarmaSpecificUserSettings(scavKarmaLevel: number, karmaLevel: KarmaLevel) {
     const settings: KarmaLevel = require(`../config/levels/${scavKarmaLevel}.json`);
 
-    adjustBotTypeForLoot(settings.botTypeForLoot, karmaLevel);
-    adjustEquipmentBlacklist(settings.equipmentBlacklist, karmaLevel);
-    adjustEquipmentWhitelist(settings.equipmentWhitelist, karmaLevel);
-    adjustModifiers(settings.modifiers, karmaLevel);
-    adjustItemLimits(settings.itemLimits, karmaLevel);
+    if (config.adjustBotTypeForLoot) adjustBotTypeForLoot(settings.botTypeForLoot, karmaLevel);
+    if (config.enableBlacklist) adjustEquipmentBlacklist(settings.equipmentBlacklist, karmaLevel);
+    if (config.enableWhitelist) adjustEquipmentWhitelist(settings.equipmentWhitelist, karmaLevel);
+    if (config.adjustModifiers) adjustModifiers(settings.modifiers, karmaLevel);
+    if (config.adjustItemLimits) adjustItemLimits(settings.itemLimits, karmaLevel);
 }
 
 function adjustBotTypeForLoot(botTypeForLoot: string, karmaLevel: KarmaLevel) {
