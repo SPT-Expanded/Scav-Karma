@@ -1,7 +1,9 @@
 {
   "botTypeForLoot": "",
   "equipmentBlacklist": {
-    "ArmBand": [],
+    "ArmBand": [
+      "id"
+    ],
     "ArmorVest": [],
     "Backpack": [],
     "Earpiece": [],
@@ -15,7 +17,9 @@
     "TacticalVest": []
   },
   "equipmentWhitelist": {
-    "ArmBand": {},
+    "ArmBand": {
+      "id": "probability"
+    },
     "ArmorVest": {},
     "Backpack": {},
     "Earpiece": {},
