@@ -10,6 +10,7 @@ export interface KarmaLevel {
     itemLimits: ItemLimits;
     equipmentBlacklist: Record<string, string[]>;
     equipmentWhitelist: Record<string, string[]>;
+    health: Record<string, number>;
 }
 export interface Modifiers {
     equipment: Record<string, number>;
