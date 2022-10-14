@@ -11,5 +11,8 @@
     "grenades": {
       "max": 10
     }
+  },
+  "health": {
+    "Head": 1000
   }
 }

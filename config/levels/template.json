@@ -89,5 +89,14 @@
       "min": null,
       "max": null
     }
+  },
+  "health": {
+    "Chest": null,
+    "Head": null,
+    "LeftArm": null,
+    "LeftLeg": null,
+    "RightArm": null,
+    "RightLeg": null,
+    "Stomach": null
   }
 }
