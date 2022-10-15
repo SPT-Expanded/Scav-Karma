@@ -18,7 +18,7 @@
   },
   "equipmentWhitelist": {
     "ArmBand": {
-      "id": "probability"
+      "id": null
     },
     "ArmorVest": {},
     "Backpack": {},
