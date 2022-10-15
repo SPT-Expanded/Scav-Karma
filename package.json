@@ -1,11 +1,10 @@
 {
-    "name": "spt-expanded-scav-karma",
-    "displayName": "SPT Expanded Scav Karma",
-    "version": "3.0.2",
+    "name": "scav-karma",
+    "version": "4.0.0",
     "main": "src/mod.js",
     "license": "MIT",
     "author": "citharus",
-    "akiVersion": ">=3.1.0",
+    "akiVersion": ">=3.2.0",
     "scripts": {
         "build:dist": "tsc --build && mkdirp dist/scav-karma && copyfiles src/**/*.js config/**/* package.json LICENSE dist/scav-karma",
         "build:zip": "mkdirp build/ && cd dist/ && bestzip --level 9 ../build/mod.zip *",
