@@ -1,6 +1,5 @@
 /// <reference types="node" />
 import http, { IncomingMessage, ServerResponse } from "http";
-import WebSocket from "ws";
 import { ApplicationContext } from "../context/ApplicationContext";
 import { HttpServerHelper } from "../helpers/HttpServerHelper";
 import { NotifierHelper } from "../helpers/NotifierHelper";
@@ -30,5 +29,5 @@ export declare class HttpServer {
     handleRequest(req: IncomingMessage, resp: ServerResponse): void;
     load(): void;
     protected getRandomisedMessage(): string;
-    protected wsOnConnection(ws: WebSocket.WebSocket, req: IncomingMessage): void;
+    protected wsOnConnection(ws: any, req: IncomingMessage): void;
 }
