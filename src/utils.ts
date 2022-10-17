@@ -3,7 +3,7 @@ import config = require("../config/config.json");
 import fs from "fs";
 
 export function adjustPlayerScavKarmaSettingsWithKarmaSpecificUserSettings(scavKarmaLevel: number, karmaLevel: KarmaLevel) {
-    if (!fs.existsSync(`../config/levels/${scavKarmaLevel}.json`)) return;
+    if (!fs.existsSync(`${process.cwd()}/user/mods/scav-karma/config/levels/${scavKarmaLevel}.json`)) return;
     const settings: KarmaLevel = require(`../config/levels/${scavKarmaLevel}.json`);
 
     if (config.adjustBotTypeForLoot) adjustBotTypeForLoot(settings.botTypeForLoot, karmaLevel);
