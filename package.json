@@ -6,7 +6,7 @@
     "author": "citharus",
     "akiVersion": ">=3.2.0",
     "scripts": {
-        "build:dist": "tsc --build && mkdirp dist/scav-karma && copyfiles src/**/*.js config/**/* package.json LICENSE dist/scav-karma",
+        "build:dist": "tsc --build && mkdirp dist/scav-karma && copyfiles src/**/*.ts config/**/* package.json LICENSE dist/scav-karma",
         "build:zip": "mkdirp build/ && cd dist/ && bestzip --level 9 ../build/mod.zip *",
         "build:clean": "tsc --build --clean && rd /s /q build dist",
         "build:release": "npm run build:dist && npm run build:zip"
